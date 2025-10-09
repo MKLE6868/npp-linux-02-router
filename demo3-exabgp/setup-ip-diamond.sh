@@ -38,7 +38,7 @@ create_setup() {
     $rtrB ip addr add 10.10.1.2/30 dev eth1
     $rtrB ip addr add 10.10.3.1/30 dev eth2
     # New interface for B–C link
-    $rtrB ip addr add 10.10.6.2/30 dev eth3
+    $rtrB ip addr add rtrB:eth3 dev eth3
 
     # Configure rtrC interfaces
     $rtrC ip addr add 10.10.2.2/30 dev eth1
@@ -74,7 +74,7 @@ delete_setup() {
     $rtrB ip addr del 10.10.1.2/30 dev eth1
     $rtrB ip addr del 10.10.3.1/30 dev eth2
     # Remove new B–C interface
-    $rtrB ip addr del 10.10.6.2/30 dev eth3
+    $rtrB ip addr del rtrB:eth3 dev eth3
 
     # Remove rtrC interfaces
     $rtrC ip addr del 10.10.2.2/30 dev eth1
