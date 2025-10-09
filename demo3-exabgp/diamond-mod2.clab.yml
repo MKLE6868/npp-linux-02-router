@@ -45,6 +45,7 @@ topology:
 
     # new link between rtrB and rtrC for part1 of the lab
     - endpoints: ["rtrB:eth3", "rtrC:eth3"]
+    - endpoints: ["rtrB:eth3", "rtrC:eth3"
 
 
 
