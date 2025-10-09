@@ -10,7 +10,7 @@ rtrD="docker exec -it  clab-mod2-bgp-rtrD"
 filename="submission.out"
 
 part1 () {
-$lan1 traceroute -s 1.1.1.1 4.4.4.4 > $filename
+$lan1 traceroute -n -s 1.1.1.1 4.4.4.4 > $filename
 echo "---" >> $filename
 $rtrB birdc show route all >> $filename
 echo "---" >> $filename
@@ -19,7 +19,7 @@ echo "---" >> $filename
 }
 
 part2() {
-$lan1 traceroute -s 1.1.1.1 4.4.4.4 >> $filename
+$lan1 traceroute -n -s 1.1.1.1 4.4.4.4 >> $filename
 }
 
 if [ $# != 1 ]
