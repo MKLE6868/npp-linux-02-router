@@ -1,10 +1,10 @@
 #!/bin/bash
 
-lan1="docker exec -it  clab-mod2-bgp-lan1"
+lan1="docker exec  clab-mod2-bgp-lan1"
 lan2="docker exec -it  clab-mod2-bgp-lan2"
 rtrA="docker exec -it  clab-mod2-bgp-rtrA"
-rtrB="docker exec -it  clab-mod2-bgp-rtrB"
-rtrC="docker exec -it  clab-mod2-bgp-rtrC"
+rtrB="docker exec  clab-mod2-bgp-rtrB"
+rtrC="docker exec  clab-mod2-bgp-rtrC"
 rtrD="docker exec -it  clab-mod2-bgp-rtrD"
 
 filename="submission.out"
