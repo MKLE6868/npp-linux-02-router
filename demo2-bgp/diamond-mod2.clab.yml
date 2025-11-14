@@ -13,22 +13,22 @@ topology:
       kind: linux
       image: ekellercu/network-testing:v0.1
       binds:
-        - mod2-bird-confs:/etc/bird-alt/
+        - ./mod2-bird-confs:/etc/bird-alt/
     rtrB:
       kind: linux
       image: ekellercu/network-testing:v0.1
       binds:
-        - mod2-bird-confs:/etc/bird-alt/
+        - ./mod2-bird-confs:/etc/bird-alt/
     rtrC:
       kind: linux
       image: ekellercu/network-testing:v0.1
       binds:
-        - mod2-bird-confs:/etc/bird-alt/
+        - ./mod2-bird-confs:/etc/bird-alt/
     rtrD:
       kind: linux
       image: ekellercu/network-testing:v0.1
       binds:
-        - mod2-bird-confs:/etc/bird-alt/
+        - ./mod2-bird-confs:/etc/bird-alt/
 
 
 
