@@ -50,6 +50,8 @@ topology:
 
     - endpoints: ["lan2:eth1", "rtrD:eth1"]
 
+    - endpoints: ["rtrB:eth3", "rtrC:eth3"]  # new link B–C
+
 
 
 
